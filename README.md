@@ -1,10 +1,8 @@
-- 👋 Hi, I’m @Oriengo
-- 👀 I’m a fullstack web development, using current frameworks like vue ,Angular and react library
-- 🌱 Ive graduated ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me  on oriengoonyango@gmail.com or 0717758400...
+# Oriengo PHP Framework
 
-<!---
-Oriengo/Oriengo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+A full-stack PHP framework made in Kenya, for the world. Inspired by Laravel, built to be lightweight, extensible, and developer-friendly.
+
+## Installation
+
+```bash
+composer global require oriengo/installer
