@@ -1,0 +1,14 @@
+{
+    "name": "oriengo/oriengo",
+    "description": "Oriengo PHP Framework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+      "psr-4": {
+        "Oriengo\\": "src/"
+      }
+    },
+    "bin": ["oriengo"],
+    "require": {}
+  }
+  
