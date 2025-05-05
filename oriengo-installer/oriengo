@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Process\Process;
+
+$projectName = $argv[1] ?? null;
+
+if (!$projectName) {
+    echo "Usage: oriengo new project_name\n";
+    exit(1);
+}
+
+echo "Creating new Oriengo project: $projectName\n";
+
+$repo = 'https://github.com/yourusername/oriengo-framework.git'; // Your skeleton repo
+
+(new Process(["git", "clone", $repo, $projectName]))->run();
+
+echo "Installing dependencies...\n";
+(new Process(["composer", "install"], null, null, null, null))->setWorkingDirectory($projectName)->run();
+
+echo "🎉 Oriengo project '$projectName' is ready.\n";

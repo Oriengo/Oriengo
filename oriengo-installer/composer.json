@@ -1,0 +1,14 @@
+{
+    "name": "oriengo/installer",
+    "description": "Oriengo framework installer",
+    "type": "project",
+    "require": {
+      "symfony/process": "^7.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "Oriengo\\Installer\\": "src/"
+      }
+    },
+    "bin": ["oriengo"]
+  }
