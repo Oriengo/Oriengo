@@ -14,7 +14,7 @@ if (!$projectName) {
 
 echo "Creating new Oriengo project: $projectName\n";
 
-$repo = 'https://github.com/yourusername/oriengo-framework.git'; // Your skeleton repo
+$repo = 'https://github.com/Oriengo/oriengo.git'; // Your skeleton repo
 
 (new Process(["git", "clone", $repo, $projectName]))->run();
 
